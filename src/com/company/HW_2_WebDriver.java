@@ -19,97 +19,63 @@ import java.util.List;
  * Created by Nataliia on 20.08.2015.
  */
 public class HW_2_WebDriver {
+    public static void slp(long sec) {   //функция для задержки
+        try {
+            Thread.sleep(sec * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nataliia\\Documents\\QA Factory\\Java lib\\chromedriver.exe");
         WebDriver d123 = new ChromeDriver();  //открыть хром
-        d123.get("https://stage.tether.to");      //открываем сайт
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
-        WebElement b = d123.findElement(By.xpath("//*[@id = 'login']"));
+        d123.get("https://stage.tether.to");      //открываем сайт 1
+       slp(5);
+        WebElement b = d123.findElement(By.xpath("//*[@id = 'login']")); //2
         b.sendKeys("   ");
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
-
-        WebElement d = d123.findElement(By.xpath("//*[@id = 'password']"));
+        slp(5);
+        WebElement d = d123.findElement(By.xpath("//*[@id = 'password']")); //2
         d.sendKeys();
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
-        WebElement c = d123.findElement(By.xpath("(//*[@ng-message])[1]"));
+       slp(2);
+        WebElement c = d123.findElement(By.xpath("(//*[@ng-message])[1]")); //3
         System.out.println(c.getText());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
-        WebElement t = d123.findElement(By.xpath("//*[@id = 'password']"));
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
+      slp(2);
+        WebElement t = d123.findElement(By.xpath("//*[@id = 'password']")); //4
+        slp(2);
         t.sendKeys(Keys.TAB);
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
+        slp(5);
 
-        WebElement j = d123.findElement(By.xpath("(//*[@ng-message])[2]"));
+        WebElement j = d123.findElement(By.xpath("(//*[@ng-message])[2]")); //5
         System.out.println(j.getText());
 
-        WebElement lend1 = d123.findElement(By.xpath("//*[@id = 'password']"));
+        WebElement lend1 = d123.findElement(By.xpath("//*[@id = 'password']")); //6
         lend1.sendKeys("asd");
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
+       slp(5);
 
-        WebElement error = d123.findElement(By.xpath("//md-input-container[2]/div/div"));
+        WebElement error = d123.findElement(By.xpath("//md-input-container[2]/div/div")); //7
         System.out.println(error.getText());
-        try {
-            Thread.sleep(7000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
-
-        WebElement lend2 = d123.findElement(By.xpath("//*[@id = 'password']"));
+        slp(7);
+        WebElement lend2 = d123.findElement(By.xpath("//*[@id = 'password']")); //8
         lend2.sendKeys("fff");
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
+       slp(2);
 
-        //List<WebElement> h = d123.findElement(By.xpath("(//*[@ng-message])[2]")("//*[@ng-message = 'minlength']"));
+        //List<WebElement> h = d123.findElements(By.xpath("(//*[@ng-message])[2]")("//md-input-container[2]/div/div")); //9
         //for (int i = 0; i < h.size(); i++) {
             //System.out.println(h.get(i).getSize());
-       // }
-        WebElement tt = d123.findElement(By.xpath("//*[@id = 'login']"));
+       //}
+        WebElement tt = d123.findElement(By.xpath("//*[@id = 'login']")); //10
         tt.sendKeys("a");
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();  // задержка
-        }
+        slp(5);
 
-        WebElement error2 = d123.findElement(By.xpath("//md-input-container[1]/div/div"));
+        WebElement error2 = d123.findElement(By.xpath("//md-input-container[1]/div/div")); //11
         System.out.println(error2.getText());
 
-        WebElement lend3 = d123.findElement(By.xpath("//*[@id = 'login']"));
+        WebElement lend3 = d123.findElement(By.xpath("//*[@id = 'login']"));  //12
         lend3.sendKeys("gwe");
 
-        d123.findElement(By.xpath("//div//button")).click();
+        d123.findElement(By.xpath("//button[span/text()='Log in']")).click(); //13
+
 
 
 
