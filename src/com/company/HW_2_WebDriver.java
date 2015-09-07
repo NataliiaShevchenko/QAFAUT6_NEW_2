@@ -19,7 +19,7 @@ import java.util.List;
  * Created by Nataliia on 20.08.2015.
  */
 public class HW_2_WebDriver {
-    public static void slp(long sec) {   //функция для задержки
+    public static void slp(long sec) {   //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         try {
             Thread.sleep(sec * 1000);
         } catch (InterruptedException e) {
@@ -28,8 +28,8 @@ public class HW_2_WebDriver {
     }
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nataliia\\Documents\\QA Factory\\Java lib\\chromedriver.exe");
-        WebDriver d123 = new ChromeDriver();  //открыть хром
-        d123.get("https://stage.tether.to");      //открываем сайт 1
+        WebDriver d123 = new ChromeDriver();  //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+        d123.get("https://stage.tether.to");      //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ 1
        slp(5);
         WebElement b = d123.findElement(By.xpath("//*[@id = 'login']")); //2
         b.sendKeys("   ");
@@ -64,7 +64,7 @@ public class HW_2_WebDriver {
         //for (int i = 0; i < h.size(); i++) {
             //System.out.println(h.get(i).getSize());
        //}
-        WebElement tt = d123.findElement(By.xpath("//*[@id = 'login']")); //10
+        WebElement tt = d123.findElement(By.xpath("//*[@id = 'login']")); //10p
         tt.sendKeys("a");
         slp(5);
 
@@ -81,7 +81,7 @@ public class HW_2_WebDriver {
 
 
 
-        //WebDriverWait wait= new WebDriverWait(d123,2); задержка пока не появится элемент
+        //WebDriverWait wait= new WebDriverWait(d123,2); пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
        // wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("")));
 
 
