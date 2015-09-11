@@ -1,5 +1,9 @@
 package com.company;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 /**
  * Created by Nataliia on 10.09.2015.
  */
@@ -35,5 +39,10 @@ public class Chernovik {
             }
         return c;
     }
-    }
+    //WebElement f = d123.findElement(By.xpath("//table//tr[1]//td[1]"));
+    //System.out.println(f.getText());
+
+
+
+}
 

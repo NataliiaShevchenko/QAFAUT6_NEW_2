@@ -38,13 +38,30 @@ public class AngelPage {
         TestHelper.d123.findElement(By.xpath("//*[@name='site']")).sendKeys(value);
     }
 
-    public static void setEnter (){
+    public static void setEnter() {
         TestHelper.d123.findElement(By.xpath("//*[@name='site']")).sendKeys(Keys.ENTER);
     }
 
     public static String getPassword(WebDriver d123) {
         return d123.findElement(By.xpath("//*[@name='password']")).getAttribute("value");
     }
+
+    public static void setPassword() {
+        TestHelper.d123.findElement(By.xpath("//*[@name='password']")).sendKeys(Keys.ENTER);
+    }
+
+    public static String getField1() {
+        return TestHelper.d123.findElement(By.xpath("//table//tr[1]//td[1]")).getText();
+    }
+    public static String getField2(){
+        return TestHelper.d123.findElement(By.xpath("//table//tr[2]//td[1]")).getText();
+    }
+
+    public static String getField3(){
+        return TestHelper.d123.findElement(By.xpath("//table//tbody//tr[4]//td[1]")).getText();
+    }
+
+
 
 
 
@@ -56,6 +73,9 @@ public class AngelPage {
             e.printStackTrace();
         }
     }
+
+
+
 }
 
 
