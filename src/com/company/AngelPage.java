@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 /**
  * Created by Nataliia on 08.09.2015.
@@ -61,9 +62,11 @@ public class AngelPage {
         return TestHelper.d123.findElement(By.xpath("//table//tbody//tr[4]//td[1]")).getText();
     }
 
+    
 
 
 
+// //input [@value='Generate'] наверно оно //*[@type='submit']
 
 
     public static void slp(long sec) {   //slp()
