@@ -9,7 +9,7 @@ public class TestHelper {
     public static ChromeDriver d123;
     
     public static void setup(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nataliia\\Documents\\QA Factory\\Java lib\\chromedriver.exe");
+        System.setProperty("d123.chrome.driver", "/usr/local/bin/chromedriver");
         d123 = new ChromeDriver();
     }
     public static void setup(String abs){
