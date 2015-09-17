@@ -15,9 +15,7 @@ import org.openqa.selenium.WebElement;
 public class AngelPage {
 
 
-    public static void setMaster(String value) {
-        TestHelper.d123.findElement(By.xpath("//*[@name='master']")).sendKeys(value);
-    }
+
 
     public static void setSitename(String value) {
         TestHelper.d123.findElement(By.xpath("//*[@name='site']")).sendKeys(value);
@@ -31,7 +29,7 @@ public class AngelPage {
         return TestHelper.d123.findElement(By.xpath("//*[@name='password']")).getAttribute("value");
     }
 
-    public static void setMaster(String value, WebDriver d123) {
+    public static void setMaster(String value) {
         TestHelper.d123.findElement(By.xpath("//*[@name='master']")).sendKeys(value);
     }
 

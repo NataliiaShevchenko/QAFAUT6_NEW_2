@@ -156,7 +156,7 @@ public class HW_3_1 {
 
 
 
-    @Before
+       @Before
     public void testBefore() {
         TestHelper.setup("http://angel.net/~nic/passwd.current.html");
         //TestHelper.setup("http://oxogamestudio.com/passwd.current2.htm");
@@ -186,4 +186,5 @@ public class HW_3_1 {
 
 
 }
+
 
