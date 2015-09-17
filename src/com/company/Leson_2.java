@@ -13,7 +13,7 @@ public class Leson_2 {
     public void test1() {
         Assert.assertEquals(19, 10 + 10);
 
-        Assert.assertEquals(true, 1 == 2); // первая строка равносильна следующей
+        Assert.assertEquals(true, 1 == 2); // РїРµСЂРІР°СЏ СЃС‚СЂРѕРєР° СЂР°РІРЅРѕСЃРёР»СЊРЅР° СЃР»РµРґСѓСЋС‰РµР№
         Assert.assertTrue(1 == 2);
     }
 
@@ -36,7 +36,7 @@ public class Leson_2 {
 
 
 
-    public static int sumAll(int[] sumAll) {             //функция, которая считает результаты
+    public static int sumAll(int[] sumAll) {             //С„СѓРЅРєС†РёСЏ, РєРѕС‚РѕСЂР°СЏ СЃС‡РёС‚Р°РµС‚ СЂРµР·СѓР»СЊС‚Р°С‚С‹
         int sum = 0;
         for (int i = 0; i < sumAll.length; i++) {
             sum = sum + sumAll[i];
