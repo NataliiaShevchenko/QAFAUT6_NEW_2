@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by Nataliia on 18.08.2015.
  */
-public interface Lesson_1 {
+public class Lesson_1 {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nataliia\\Documents\\QA Factory\\Java lib\\chromedriver.exe");
         WebDriver d123 = new ChromeDriver();  //открыть хром
