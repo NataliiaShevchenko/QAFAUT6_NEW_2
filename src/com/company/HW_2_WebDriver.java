@@ -1,19 +1,9 @@
 package com.company;
-import com.thoughtworks.selenium.webdriven.commands.WaitForCondition;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.sql.Driver;
-import java.util.ArrayList;
-import java.util.List;
-
 
 /**
  * Created by Nataliia on 20.08.2015.
