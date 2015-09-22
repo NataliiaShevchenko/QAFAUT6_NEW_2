@@ -27,4 +27,12 @@ public class TestHelper {
         
     }
 
+    public static void slp(long sec) {   //slp()
+        try {
+            Thread.sleep(sec * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

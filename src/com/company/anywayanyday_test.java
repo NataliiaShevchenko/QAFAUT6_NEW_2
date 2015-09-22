@@ -10,8 +10,20 @@ public class anywayanyday_test {
     @Test
     public void test1() {
         anywayanyday.setButton();
-
+        anywayanyday.findEnglish();
+        TestHelper.slp(5);
+        anywayanyday.setLabel();
+        anywayanyday.setData();
+        TestHelper.slp(6);
+        //anywayanyday.setCity();
+        anywayanyday.setCity("kiev");
+        TestHelper.slp(3);
+        anywayanyday.setCity3();
+        anywayanyday.setCity2("Odessa");
     }
+
+
+
 
     @Before
     public void testBefore() {
