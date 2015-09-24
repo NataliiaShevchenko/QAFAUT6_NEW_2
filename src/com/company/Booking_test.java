@@ -38,6 +38,39 @@ public class Booking_test {
         Booking.setFirsttname("Test");
     }
 
+    @Test
+    public void test2(){
+        Booking.setFrom("Львов");
+        TestHelper.slp(3);
+        Booking.setKiev2();
+        Booking.setTo2("Ужгород");
+        TestHelper.slp(3);
+        Booking.setIvano2();
+        Booking.setDatafield2();
+        Booking.setData2();
+        Booking.setSearch();
+        TestHelper.slp(6);
+        Booking.get829();
+        Booking.get601();
+        Booking.set601();
+        TestHelper.slp(7);
+        Assert.assertEquals("Маршрут поезда", Booking.getText());
+        Booking.setClose();
+        TestHelper.slp(3);
+        Booking.setButtonP();
+        TestHelper.slp(5);
+        Assert.assertEquals("rgba(0, 0, 0, 1)", Booking.getColor2());
+        Assert.assertEquals("rgba(0, 0, 0, 1)", Booking.getColor3());
+        Booking.setPlace41();
+        Booking.setPlace42();
+        Booking.setLastname2("test");
+        Booking.setFirstname2("test");
+        Booking.setLastname3("test2");
+        Booking.setFirstname3("test2");
+        Assert.assertEquals(Booking.getTotal(), "219,48 грн");
+
+    }
+
 
 
 
